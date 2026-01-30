@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Checkout App Repo') {
             steps {
-                git branch: 'main', url: 'https://github.com/s-shekhar3/sc-calc-maven-jenkins.git'
+                git branch: 'main',
+                    url: 'https://github.com/s-shekhar3/sc-calc-maven-jenkins.git'
                 
             }
         }
