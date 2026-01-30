@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
+                git branch: 'main',
                 // Checkout your source code from version control
                 git 'https://github.com/s-shekhar3/sc-calc-maven-jenkins.git'
             }
