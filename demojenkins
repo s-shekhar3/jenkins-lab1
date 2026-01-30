@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Checkout') {
+        stage('Checkout App Repo') {
             steps {
                 git branch: 'main',
                 // Checkout your source code from version control
